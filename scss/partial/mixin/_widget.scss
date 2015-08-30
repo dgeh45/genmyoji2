@@ -1,0 +1,27 @@
+@mixin widget-base {}
+@mixin service-widget-box {
+	}
+
+%sentence {
+  line-height: 1.4;
+}
+
+@mixin sentence {
+  @extend %sentence;
+}
+
+@mixin text-indent {
+	text-indent: -9999px;
+}
+
+@mixin mb10 {
+	margin-bottom: 10px;
+}
+
+@mixin block {
+	display: block;
+}
+
+@mixin none {
+	display: none;
+}

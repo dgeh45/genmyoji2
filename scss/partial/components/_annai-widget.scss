@@ -1,0 +1,36 @@
+.-annai {
+    .last {
+        @include inline-block;
+        margin-bottom: 40px;
+    }
+    strong {
+        font-size: 36px;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .keireki {
+        margin-bottom: 20px;
+        dl {
+            border-bottom: 1px dotted #fff;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            @include clearfix;
+            font-size: 14px;
+            dt {
+                @include inline-block;
+                width: 200px;
+            }
+            dd {
+                @include inline-block;
+                width: 380px;
+            }
+        }
+    }
+    .daijini-omou {
+        padding-top: 100px;
+        margin-bottom: 30px;
+        p {
+            margin-bottom: 15px;
+        }
+    }
+}

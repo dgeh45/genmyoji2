@@ -1,0 +1,1063 @@
+@charset "utf-8";
+/* line 5, ../scss/partial/mixin/_widget.scss */
+.sentence, .header-middle .header-box .midashi-wrap h1 {
+  line-height: 1.4;
+}
+
+/* line 70, ../scss/partial/_reset.scss */
+a,
+abbr,
+address,
+article,
+aside,
+audio,
+b,
+blockquote,
+body,
+canvas,
+caption,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+samp,
+section,
+small,
+span,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+ul,
+var,
+video {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
+/* line 93, ../scss/partial/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* line 98, ../scss/partial/_reset.scss */
+ul,
+ol {
+  list-style: none;
+}
+
+/* line 103, ../scss/partial/_reset.scss */
+blockquote,
+q {
+  quotes: none;
+}
+
+/* line 110, ../scss/partial/_reset.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 115, ../scss/partial/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 120, ../scss/partial/_reset.scss */
+a {
+  outline: none;
+}
+
+/* line 124, ../scss/partial/_reset.scss */
+a:link {
+  color: #09598d;
+  text-decoration: none;
+}
+
+/* line 129, ../scss/partial/_reset.scss */
+a:visited {
+  color: #09598d;
+}
+
+/* line 133, ../scss/partial/_reset.scss */
+a:hover {
+  color: #09598d;
+  text-decoration: underline;
+}
+
+/* line 138, ../scss/partial/_reset.scss */
+a:active {
+  color: #09598d;
+  text-decoration: underline;
+}
+
+/* line 143, ../scss/partial/_reset.scss */
+img {
+  vertical-align: bottom;
+}
+
+/* line 147, ../scss/partial/_reset.scss */
+.cx:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/* line 155, ../scss/partial/_reset.scss */
+*:first-child + html .cx {
+  /* display: inline-block;*/
+  min-height: 1%;
+}
+
+/* line 160, ../scss/partial/_reset.scss */
+* html .cx {
+  height: 1%;
+}
+
+/* line 164, ../scss/partial/_reset.scss */
+a {
+  overflow: hidden;
+  text-decoration: underline;
+}
+
+/* line 1, ../scss/partial/layout/_container.scss */
+body {
+  background: #000;
+  font-size: 13px;
+  font-family: Meiryo, "Hiragino Mincho Pro", "MS Mincho","Hiragino Kaku Gothic Pro W3", "Hiragino Kaku Gothic Pro", "MS P Gothic", Osaka, Arial, Sans-serif;
+  line-height: 1;
+  -webkit-text-size-adjust: none;
+}
+/* line 7, ../scss/partial/layout/_container.scss */
+body.blog {
+  background: #F6EEDB;
+}
+
+@media screen and (max-device-width: 480px) {
+  /* line 13, ../scss/partial/layout/_container.scss */
+  body {
+    -webkit-text-size-adjust: none;
+    /* for iPhone */
+  }
+}
+/* line 18, ../scss/partial/layout/_container.scss */
+html {
+  overflow-y: scroll;
+}
+
+/* line 22, ../scss/partial/layout/_container.scss */
+.container {
+  width: 100%;
+}
+/* line 24, ../scss/partial/layout/_container.scss */
+.container .content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* header */
+/* line 2, ../scss/partial/components/_background-widget.scss */
+.background-widget {
+  background: url(../img/header-bg.jpg) no-repeat 50% 0;
+  margin: 0;
+}
+/* line 5, ../scss/partial/components/_background-widget.scss */
+.background-widget .foot {
+  background: url(../img/footer-bg.jpg) no-repeat 50% 100%;
+  padding-top: 300px;
+}
+/* line 8, ../scss/partial/components/_background-widget.scss */
+.background-widget .foot .inner {
+  background: #f6f4eb;
+  width: 940px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+/* line 13, ../scss/partial/components/_background-widget.scss */
+.background-widget .foot .inner.notfirst {
+  padding-top: 30px;
+}
+
+/* header */
+/* line 3, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle {
+  box-shadow: rgba(105, 105, 105, 0.56) 0px 0px 7px 5px;
+  -webkit-box-shadow: rgba(105, 105, 105, 0.56) 0px 0px 7px 5px;
+  -moz-box-shadow: rgba(105, 105, 105, 0.56) 0px 0px 7px 5px;
+  background: url(../img/header-bg.png) repeat-x;
+  height: 91px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 900;
+  display: block;
+}
+/* line 14, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box {
+  width: 960px;
+  margin: 0 auto;
+}
+/* line 17, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .midashi-wrap {
+  float: left;
+  padding-top: 10px;
+}
+/* line 20, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .midashi-wrap h1 {
+  background: url(../img/logo-small.png) no-repeat;
+  width: 120px;
+  height: 62px;
+  display: block;
+}
+/* line 26, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .midashi-wrap h1 a {
+  display: block;
+  width: 120px;
+  height: 62px;
+  text-indent: -9999px;
+}
+/* line 34, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap {
+  display: block;
+  float: right;
+  width: 680px;
+}
+/* line 39, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li {
+  display: block;
+  float: left;
+  width: 91px;
+  height: 91px;
+  margin: 0;
+  position: relative;
+}
+/* line 46, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li a {
+  background: url(../img/header-titles-small.png) no-repeat;
+  display: block;
+  text-indent: -9999px;
+  height: 91px;
+  width: 91px;
+}
+/* line 53, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li span {
+  background: url(../img/menu-fukidashi.png) no-repeat;
+  text-indent: -9999px;
+  display: none;
+  width: 75px;
+  height: 260px;
+  position: absolute;
+  top: 65px;
+  left: 10px;
+}
+/* line 64, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.annai {
+  width: 90px;
+}
+/* line 67, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.annai a:hover,
+.header-middle .header-box .menu-wrap .list li.annai a.select {
+  background-position: 0 -93px;
+}
+/* line 71, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.soushiki {
+  width: 80px;
+}
+/* line 73, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.soushiki span {
+  background-position: -90px 0;
+  left: 2px;
+}
+/* line 77, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.soushiki a {
+  background-position: -91px 0;
+  width: 80px;
+}
+/* line 81, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.soushiki a:hover, .header-middle .header-box .menu-wrap .list li.soushiki a.select {
+  background-position: -91px -93px;
+}
+/* line 86, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.houji {
+  width: 78px;
+}
+/* line 88, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.houji span {
+  background-position: -167px 0;
+  left: -3px;
+}
+/* line 92, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.houji a {
+  background-position: -173px 0;
+  width: 80px;
+}
+/* line 96, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.houji a:hover, .header-middle .header-box .menu-wrap .list li.houji a.select {
+  background-position: -173px -93px;
+}
+/* line 101, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.ayumi {
+  width: 76px;
+}
+/* line 103, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.ayumi span {
+  background-position: -252px 0;
+  left: -3px;
+}
+/* line 107, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.ayumi a {
+  background-position: -254px 0;
+  width: 76px;
+}
+/* line 111, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.ayumi a:hover, .header-middle .header-box .menu-wrap .list li.ayumi a.select {
+  background-position: -254px -93px;
+}
+/* line 116, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.houwa {
+  width: 75px;
+}
+/* line 118, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.houwa span {
+  background-position: -330px 0;
+  left: 0;
+}
+/* line 122, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.houwa a {
+  background-position: -335px 0;
+  width: 75px;
+}
+/* line 126, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.houwa a:hover, .header-middle .header-box .menu-wrap .list li.houwa a.select {
+  background-position: -335px -93px;
+}
+/* line 131, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.question {
+  width: 74px;
+}
+/* line 133, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.question span {
+  background-position: -409px 0;
+  left: 0;
+}
+/* line 137, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.question a {
+  background-position: -416px 0;
+  width: 74px;
+}
+/* line 141, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.question a:hover, .header-middle .header-box .menu-wrap .list li.question a.select {
+  background-position: -416px -93px;
+}
+/* line 146, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.access {
+  width: 77px;
+}
+/* line 148, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.access span {
+  background-position: -490px 0;
+  left: -2px;
+}
+/* line 152, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.access a {
+  background-position: -493px 0;
+  width: 77px;
+}
+/* line 156, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.access a:hover, .header-middle .header-box .menu-wrap .list li.access a.select {
+  background-position: -493px -93px;
+}
+/* line 161, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.chawakai {
+  width: 80px;
+}
+/* line 163, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.chawakai span {
+  background-position: -566px 0;
+  left: -5px;
+}
+/* line 167, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.chawakai a {
+  background-position: -571px 0;
+  width: 80px;
+}
+/* line 171, ../scss/partial/components/_blog-header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.chawakai a:hover, .header-middle .header-box .menu-wrap .list li.chawakai a.select {
+  background-position: -571px -93px;
+}
+
+/* line 182, ../scss/partial/components/_blog-header-widget.scss */
+.blog .header-middle {
+  position: relative !important;
+}
+
+/* line 2, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .top {
+  background: url(../img/blog-title-ayumi.jpg) no-repeat 50% 0 #bad8fe;
+  height: 409px;
+  margin: 0 auto;
+  width: 100%;
+}
+/* line 7, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .top.howa {
+  background: url(../img/blog-title-howa.jpg) no-repeat 50% 0 white;
+}
+/* line 10, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .top.houji {
+  background: url(../img/header-title-houji.jpg) no-repeat 50% 0 white;
+}
+/* line 13, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .top h1 {
+  text-indent: -9999px;
+}
+/* line 17, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body {
+  width: 960px;
+  margin: 0 auto;
+}
+/* line 20, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper {
+  *zoom: 1;
+  padding: 30px 0;
+}
+/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.blog-top-widget .blog-body .blog-wrapper:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+/* line 23, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .main {
+  width: 710px;
+  float: right;
+}
+/* line 26, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .main .main-box {
+  margin-bottom: 80px;
+}
+/* line 28, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .main .main-box h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+/* line 34, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .main .main-box h2 {
+  font-size: 24px;
+}
+/* line 37, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .main .main-box h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+/* line 41, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .main .main-box h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+/* line 45, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .main .main-box strong {
+  font-weight: bold;
+}
+/* line 48, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .main .main-box p {
+  display: block;
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 5px;
+  min-height: 20px;
+}
+/* line 55, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .main .main-box p.sub-text {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+/* line 60, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .main .main-box del {
+  text-decoration: line-through;
+}
+/* line 63, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .main .main-box a {
+  background-color: rgba(20, 20, 20, 0.15);
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  color: #000;
+  padding: 0 5px;
+  text-decoration: underline;
+}
+/* line 69, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .main .main-box a:hover {
+  background-color: rgba(20, 20, 20, 0.15);
+  text-decoration: none;
+}
+/* line 74, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .main .main-box p.time {
+  text-align: right;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+/* line 79, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .main .main-box .image-area {
+  margin-bottom: 15px;
+}
+/* line 83, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .main .main-box ul li {
+  list-style-type: disc;
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+/* line 91, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .main .blogPage {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 95, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .main .blogPage ul {
+  *zoom: 1;
+}
+/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.blog-top-widget .blog-body .blog-wrapper .main .blogPage ul:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+/* line 97, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .main .blogPage ul li {
+  background-color: rgba(20, 20, 20, 0.15);
+  font-size: 16px;
+}
+/* line 100, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .main .blogPage ul li.next {
+  float: left;
+}
+/* line 103, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .main .blogPage ul li.past {
+  float: right;
+}
+/* line 106, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .main .blogPage ul li a {
+  color: #000;
+  display: block;
+  padding: 10px;
+  text-decoration: underline;
+}
+/* line 111, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .main .blogPage ul li a:hover {
+  text-decoration: none;
+}
+/* line 119, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .aside {
+  width: 230px;
+  float: left;
+}
+/* line 123, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .aside .aside-list-wrap {
+  margin-bottom: 40px;
+}
+/* line 125, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .aside .aside-list-wrap .aside-list-title {
+  font-size: 22px;
+  display: block;
+  padding-bottom: 10px;
+}
+/* line 129, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .aside .aside-list-wrap .aside-list-title span {
+  font-size: 16px;
+}
+/* line 135, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .aside .aside-list-wrap .aside-list li a {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  padding: 3px 5px;
+}
+/* line 141, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .blog-body .blog-wrapper .aside .aside-list-wrap .aside-list li a:hover {
+  background-color: #d4c59d;
+}
+/* line 151, ../scss/partial/components/_blog-widget.scss */
+.blog-top-widget .copyright {
+  color: #000;
+}
+
+/* line 156, ../scss/partial/components/_blog-widget.scss */
+.-toptext {
+  text-align: center;
+}
+/* line 158, ../scss/partial/components/_blog-widget.scss */
+.-toptext h1 {
+  margin-bottom: 40px;
+}
+/* line 161, ../scss/partial/components/_blog-widget.scss */
+.-toptext .subtitle {
+  font-size: 20pt;
+  margin-bottom: 40px;
+  padding-top: 30px;
+}
+/* line 166, ../scss/partial/components/_blog-widget.scss */
+.-toptext .weak-text {
+  font-size: 12pt;
+  line-height: 1.4;
+}
+
+/* line 2, ../scss/partial/components/_annai-widget.scss */
+.-annai .last {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  margin-bottom: 40px;
+}
+/* line 6, ../scss/partial/components/_annai-widget.scss */
+.-annai strong {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 10px;
+}
+/* line 11, ../scss/partial/components/_annai-widget.scss */
+.-annai .keireki {
+  margin-bottom: 20px;
+}
+/* line 13, ../scss/partial/components/_annai-widget.scss */
+.-annai .keireki dl {
+  border-bottom: 1px dotted #fff;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  *zoom: 1;
+  font-size: 14px;
+}
+/* line 19, ../scss/partial/components/_annai-widget.scss */
+.-annai .keireki dl dt {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  width: 200px;
+}
+/* line 23, ../scss/partial/components/_annai-widget.scss */
+.-annai .keireki dl dd {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  width: 380px;
+}
+/* line 29, ../scss/partial/components/_annai-widget.scss */
+.-annai .daijini-omou {
+  padding-top: 100px;
+  margin-bottom: 30px;
+}
+/* line 32, ../scss/partial/components/_annai-widget.scss */
+.-annai .daijini-omou p {
+  margin-bottom: 15px;
+}
+
+/* line 2, ../scss/partial/components/_soushiki-widget.scss */
+.-soushiki strong {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* line 8, ../scss/partial/components/_soushiki-widget.scss */
+.-toptext {
+  text-align: center;
+}
+/* line 10, ../scss/partial/components/_soushiki-widget.scss */
+.-toptext h1 {
+  margin-bottom: 40px;
+}
+/* line 13, ../scss/partial/components/_soushiki-widget.scss */
+.-toptext .subtitle {
+  font-size: 20pt;
+  margin-bottom: 40px;
+  padding-top: 30px;
+}
+/* line 18, ../scss/partial/components/_soushiki-widget.scss */
+.-toptext .weak-text {
+  font-size: 12pt;
+  line-height: 1.4;
+}
+
+/* line 2, ../scss/partial/components/_houji-widget.scss */
+.-houji strong {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* line 8, ../scss/partial/components/_houji-widget.scss */
+.-toptext {
+  text-align: center;
+}
+/* line 10, ../scss/partial/components/_houji-widget.scss */
+.-toptext h1 {
+  margin-bottom: 40px;
+}
+/* line 13, ../scss/partial/components/_houji-widget.scss */
+.-toptext .subtitle {
+  font-size: 20pt;
+  margin-bottom: 40px;
+  padding-top: 30px;
+}
+/* line 18, ../scss/partial/components/_houji-widget.scss */
+.-toptext .weak-text {
+  font-size: 12pt;
+  line-height: 1.4;
+}
+
+/* line 2, ../scss/partial/components/_question-widget.scss */
+.-question strong {
+  font-size: 36px;
+  display: block;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+/* line 8, ../scss/partial/components/_question-widget.scss */
+.-question .last {
+  margin-bottom: 20px;
+}
+/* line 11, ../scss/partial/components/_question-widget.scss */
+.-question .email {
+  font-size: 20px;
+}
+/* line 14, ../scss/partial/components/_question-widget.scss */
+.-question .FAX {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 2, ../scss/partial/components/_access-widget.scss */
+.-access .url {
+  font-size: 20px;
+}
+/* line 5, ../scss/partial/components/_access-widget.scss */
+.-access .tel {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* line 2, ../scss/partial/components/_chawakai-widget.scss */
+.-chawakai strong {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 10px;
+}
+/* line 7, ../scss/partial/components/_chawakai-widget.scss */
+.-chawakai p {
+  margin-bottom: 20px;
+}
+/* line 10, ../scss/partial/components/_chawakai-widget.scss */
+.-chawakai .copyright {
+  color: #000;
+  font-size: 20px;
+  display: block;
+  margin: 700px auto 30px;
+  text-align: center;
+}
+
+/* line 1, ../scss/partial/components/_base-widget.scss */
+.dispblk {
+  display: block !important;
+}
+
+/* line 5, ../scss/partial/components/_base-widget.scss */
+.dispnon {
+  display: none !important;
+}
+
+/* line 9, ../scss/partial/components/_base-widget.scss */
+.weak-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* line 15, ../scss/partial/components/_base-widget.scss */
+.item-list li {
+  font-size: 22px;
+}
+/* line 18, ../scss/partial/components/_base-widget.scss */
+.item-list.-sidebyside {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 20, ../scss/partial/components/_base-widget.scss */
+.item-list.-sidebyside li {
+  float: left;
+  margin-right: 15px;
+  padding-left: 0;
+}
+/* line 27, ../scss/partial/components/_base-widget.scss */
+.item-list.-marker li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+/* header */
+/* line 2, ../scss/partial/components/_footer-widget.scss */
+.footer {
+  width: 900px;
+  margin: 20px auto;
+}
+/* line 5, ../scss/partial/components/_footer-widget.scss */
+.footer dl {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  width: 270px;
+  margin-right: 10px;
+}
+/* line 10, ../scss/partial/components/_footer-widget.scss */
+.footer dl dt {
+  color: #fff;
+  font-size: 14pt;
+  display: block;
+  margin-bottom: 20px;
+}
+/* line 16, ../scss/partial/components/_footer-widget.scss */
+.footer dl dd {
+  display: block;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+/* line 20, ../scss/partial/components/_footer-widget.scss */
+.footer dl dd a {
+  font-size: 11pt;
+  color: #fff;
+  background: url(../img/arrow-sml.png) no-repeat 0 8px;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+/* line 31, ../scss/partial/components/_footer-widget.scss */
+.copyright {
+  color: #fff;
+  font-size: 12pt;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+/* line 1, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+/* line 5, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-annai {
+  background: url(../img/goannai-bg.jpg) no-repeat 50% 0 #4a4f55;
+}
+/* line 7, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-annai h1 {
+  width: 65px;
+  height: 373px;
+  background: url(../img/sub-tit-group.png) no-repeat -780px -82px;
+}
+/* line 13, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-soushiki {
+  background: url(../img/bg-soushiki.jpg) repeat;
+}
+/* line 15, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-soushiki h1 {
+  width: 77px;
+  height: 398px;
+  background: url(../img/sub-tit-group.png) no-repeat -332px -75px;
+}
+/* line 21, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-houji {
+  background: url(../img/bg-hotoke.jpg) no-repeat;
+}
+/* line 23, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-houji h1 {
+  width: 81px;
+  height: 586px;
+  background: url(../img/title-gokigan.png) no-repeat;
+}
+/* line 29, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-question {
+  background: #F5EEDB;
+}
+/* line 31, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-question h1 {
+  width: 65px;
+  height: 477px;
+  background: url(../img/sub-tit-group.png) no-repeat -998px -80px;
+}
+/* line 37, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-access {
+  background: #F5EEDB;
+}
+/* line 39, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-access h1 {
+  width: 65px;
+  height: 297px;
+  background: url(../img/sub-tit-group.png) no-repeat -117px -84px;
+}
+/* line 45, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-chawakai {
+  background: url(../img/bg-chawakai.jpg) no-repeat 50% 0 #d9ab6f;
+  height: 1524px;
+  position: relative;
+}
+/* line 49, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-chawakai h1 {
+  width: 70px;
+  height: 336px;
+  background: url(../img/sub-tit-group.png) no-repeat -553px -85px;
+}
+/* line 54, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-chawakai .box-wrap {
+  padding: 150px 0 0;
+}
+/* line 58, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea .box-wrap {
+  width: 960px;
+  margin: 0 auto;
+  padding: 130px 0 60px;
+}
+/* line 62, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea .box-wrap .sentence-wrap {
+  width: 650px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  font-size: 18px;
+  margin-left: 30px;
+  line-height: 2;
+}
+/* line 68, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea .box-wrap .sentence-wrap.-annai {
+  color: #fff;
+  width: 600px;
+}
+/* line 72, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea .box-wrap .sentence-wrap.-soushiki {
+  width: 760px;
+}
+/* line 75, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea .box-wrap .sentence-wrap.-access {
+  width: 600px;
+  margin-left: 120px;
+}
+/* line 79, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea .box-wrap .sentence-wrap.-question {
+  width: 690px;
+}
+/* line 84, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea h1 {
+  text-indent: -9999px;
+  display: block;
+}
+/* line 87, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea h1.left {
+  float: left;
+  margin-left: 50px;
+}
+/* line 91, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea h1.right {
+  float: right;
+  margin-right: 50px;
+}

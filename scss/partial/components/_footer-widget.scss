@@ -1,0 +1,37 @@
+/* header */
+.footer {
+    width: 900px;
+    margin: 20px auto;
+    dl {
+    	@include inline-block;
+    	vertical-align: top;
+    	width: 270px;
+    	margin-right: 10px;
+		dt {
+			color: #fff;
+			font-size: 14pt;
+			display: block;
+			margin-bottom: 20px;
+		}
+		dd {
+			display: block;
+			margin-bottom: 10px;
+			line-height: 1.4;
+			a {
+				font-size: 11pt;
+				color: #fff;
+				background: url(../img/arrow-sml.png) no-repeat 0 8px;
+				display: inline-block;
+				padding-left: 10px;
+			}	
+		}
+    }
+}
+
+.copyright {
+	color: #fff;
+	font-size: 12pt;
+	text-align: center;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}

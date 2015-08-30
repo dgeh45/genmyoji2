@@ -1,0 +1,96 @@
+.boxarea {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 10px;
+    &.-annai {
+        background: url(../img/goannai-bg.jpg) no-repeat 50% 0 #4A4F55;
+        h1 {
+            width: 65px;
+            height: 373px;
+            background: url(../img/sub-tit-group.png) no-repeat -780px -82px;
+        }
+    }
+    &.-soushiki {
+        background: url(../img/bg-soushiki.jpg) repeat;
+        h1 {
+            width: 77px;
+            height: 398px;
+            background: url(../img/sub-tit-group.png) no-repeat -332px -75px;
+        }
+    }
+    &.-houji {
+        background: url(../img/bg-hotoke.jpg) no-repeat;
+        h1 {
+            width: 81px;
+            height: 586px;
+            background: url(../img/title-gokigan.png) no-repeat;
+        }
+    }
+    &.-question {
+        background: #F5EEDB;
+        h1 {
+            width: 65px;
+            height: 477px;
+            background: url(../img/sub-tit-group.png) no-repeat -998px -80px;
+        }
+    }
+    &.-access {
+        background: #F5EEDB;
+        h1 {
+            width: 65px;
+            height: 297px;
+            background: url(../img/sub-tit-group.png) no-repeat -117px -84px;
+        }
+    }
+    &.-chawakai {
+        background: url(../img/bg-chawakai.jpg) no-repeat 50% 0 #D9AB6F;
+        height: 1524px;
+        position: relative;
+        h1 {
+            width: 70px;
+            height: 336px;
+            background: url(../img/sub-tit-group.png) no-repeat -553px -85px;
+        }
+        .box-wrap {
+            padding: 150px 0 0;
+        }
+    }
+    .box-wrap {
+        width: 960px;
+        margin: 0 auto;
+        padding: 130px 0 60px;
+        .sentence-wrap {
+            width: 650px;
+            @include inline-block;
+            font-size: 18px;
+            margin-left: 30px;
+            line-height: 2;
+            &.-annai {
+                color: #fff;
+                width: 600px;
+            }
+            &.-soushiki {
+                width: 760px;
+            }
+            &.-access {
+                width: 600px;
+                margin-left: 120px;
+            }
+            &.-question {
+                width: 690px;
+            }
+        }
+    }
+    h1 {
+        @include text-indent;
+        display: block;
+        &.left {
+            float: left;
+            margin-left: 50px;
+        }
+        &.right {
+            float: right;
+            margin-right: 50px;
+        }
+    }
+}

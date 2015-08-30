@@ -1,0 +1,184 @@
+/* header */
+
+.header-middle {
+    box-shadow:rgba(105, 105, 105, 0.56) 0px 0px 7px 5px;
+-webkit-box-shadow:rgba(105, 105, 105, 0.56) 0px 0px 7px 5px;
+-moz-box-shadow:rgba(105, 105, 105, 0.56) 0px 0px 7px 5px;
+    background: url(../img/header-bg.png) repeat-x;
+    height: 91px;
+    position: fixed;
+	top: 0;
+    width: 100%;
+    z-index: 900;
+    @include block;
+    .header-box {
+        width: 960px;
+        margin: 0 auto;
+        .midashi-wrap {
+            float: left;
+            padding-top: 10px;
+            h1 {
+                background: url(../img/logo-small.png) no-repeat;
+                width: 120px;
+                height: 62px;
+                display: block;
+                @include sentence;
+                a {
+                    @include block;
+                    width: 120px;
+                    height: 62px;
+                    @include text-indent;
+                }
+            }
+        }
+        .menu-wrap {
+            display: block;
+            float: right;
+            width: 680px;
+            .list {
+                li {
+                    @include block;
+                    float: left;
+                    width: 91px;
+                    height: 91px;
+                    margin: 0;
+                    position: relative;
+                    a {
+						background: url(../img/header-titles-small.png) no-repeat;
+                        @include block;
+                        @include text-indent;
+                        height: 91px;
+                        width: 91px;
+                    }
+                    span {
+                        background: url(../img/menu-fukidashi.png) no-repeat;
+                        @include text-indent;
+                        @include none;
+                        width: 75px;
+                        height: 260px;
+                        position: absolute;
+                        top: 65px;
+                        left: 10px;
+                        //@include none;
+                    }
+                    &.annai {
+                        width: 90px;
+                		a:hover,
+                		a.select {
+							background-position: 0 -93px;
+                		}
+                    }
+                    &.soushiki {
+                        width: 80px;
+                        span {
+                            background-position: -90px 0;
+                            left: 2px;
+                        }
+                        a {
+                            background-position: -91px 0;
+                            width: 80px;
+                            &:hover,
+                            &.select {
+                            	background-position: -91px -93px;
+                            }
+                        } 
+                    }
+                    &.houji {
+                        width: 78px;
+                        span {
+                            background-position: -167px 0;
+                            left: -3px;
+                        }
+                        a {
+                            background-position: -173px 0;
+                            width: 80px;
+                            &:hover,
+                            &.select {
+								background-position: -173px -93px;
+                            }
+                        }
+                    }
+                    &.ayumi {
+                        width: 76px;
+                        span {
+                            background-position: -252px 0;
+                            left: -3px;
+                        }
+                        a {
+                            background-position: -254px 0;
+                            width: 76px;
+                            &:hover,
+                            &.select {
+                            	background-position: -254px -93px;
+                            }
+                        }
+                    }
+                    &.houwa {
+                        width: 75px;
+                        span {
+                            background-position: -330px 0;
+                            left: 0;
+                        }
+                        a {
+                            background-position: -335px 0;
+                            width: 75px;
+                            &:hover,
+                            &.select {
+                            	background-position: -335px -93px;
+                            }
+                        }
+                    }
+                    &.question {
+                        width: 74px;
+                        span {
+                            background-position: -409px 0;
+                            left: 0;
+                        }
+                        a {
+                            background-position: -416px 0;
+                            width: 74px;
+                            &:hover,
+                            &.select {
+                            	background-position: -416px -93px;
+                            }
+                        }
+                    }
+                    &.access {
+                        width: 77px;
+                        span {
+                            background-position: -490px 0;
+                            left: -2px;
+                        }
+                        a {
+                            background-position: -493px 0;
+                            width: 77px;
+                            &:hover,
+                            &.select {
+                            	background-position: -493px -93px;
+                            }
+                        }
+                    }
+                    &.chawakai {
+                        width: 80px;
+                        span {
+                            background-position: -566px 0;
+                            left: -5px;
+                        }
+                        a {
+                            background-position: -571px 0;
+                            width: 80px;
+                            &:hover,
+                            &.select {
+                            	background-position: -571px -93px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.blog .header-middle {
+    position: relative !important;
+}

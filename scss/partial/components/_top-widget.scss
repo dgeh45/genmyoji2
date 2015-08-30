@@ -1,0 +1,47 @@
+.top-widget {
+	background: url(../img/bg01.jpg) no-repeat 50% 0 #FBF8F3;
+	margin: 0 auto;
+	height: 862px;
+	width: 100%;
+	.top {
+		position: relative;
+		margin: 0 auto;
+		top: 330px;
+		width: 960px;
+		ul.blog-list {
+			li {
+				margin-bottom: 20px;
+				p {
+					background: #000;
+					@include inline-block;
+					@include sentence;
+					color: #fff;
+					@include mb10;
+					letter-spacing: 1.6px;
+					padding: 5px;
+					font-size: 12px;
+				}
+				strong {
+					@include block;
+					a {
+						color: #fff;
+						@include inline-block;
+						font-size: 40px;
+						padding: 5px;
+						&:visited {
+							color: #fff;
+						}
+						&:hover {
+							text-decoration: none;
+							background-color: #B8860B;
+						}
+						&:active {
+							color: #fff;
+						}
+					}
+				}
+
+			}
+		}
+	}
+}

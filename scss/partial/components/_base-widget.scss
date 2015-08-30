@@ -1,0 +1,33 @@
+.dispblk {
+	display: block !important;
+}
+
+.dispnon {
+	display: none !important;
+}
+
+.weak-title {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.item-list {
+	li {
+		font-size: 22px;
+	}
+	&.-sidebyside {
+		@include clearfix;
+		li {
+			float: left;
+			margin-right: 15px;
+			padding-left: 0;
+		}
+	}
+	&.-marker {
+		li {
+			list-style-type: disc;
+			list-style-position: inside;
+			
+		}
+	}
+}

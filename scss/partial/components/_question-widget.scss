@@ -1,0 +1,18 @@
+.-question {
+    strong {
+        font-size: 36px;
+        @include block;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+    .last {
+        margin-bottom: 20px;
+    }
+    .email {
+        font-size: 20px;
+    }
+    .FAX {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}

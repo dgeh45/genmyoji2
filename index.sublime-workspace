@@ -1,0 +1,412 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"block",
+				"block"
+			],
+			[
+				"text",
+				"text-indent"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "scss/style.scss",
+			"settings":
+			{
+				"buffer_size": 9032,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "access/index.html",
+			"settings":
+			{
+				"buffer_size": 1777,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "about/index.html",
+			"settings":
+			{
+				"buffer_size": 2007,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "interior/index.html",
+			"settings":
+			{
+				"buffer_size": 2293,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "souvenirs/index.html",
+			"settings":
+			{
+				"buffer_size": 1856,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dining/index.html",
+			"settings":
+			{
+				"buffer_size": 2847,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Compass/Compass.sublime-build",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/dgeh45/Documents/fujita/about/index.html",
+		"/Users/dgeh45/Documents/fujita/index.html",
+		"/Users/dgeh45/Documents/fujita/about/about.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/_base.scss",
+		"/Users/dgeh45/Documents/201308renew/index.html",
+		"/Users/dgeh45/Documents/fujita/config.rb",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_area-changer.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_brothers.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_collection.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_contents-nav.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_gnavi-member-widget.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_header-widget.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_horizontal-link-list.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_icon.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_inner-splitter.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_makunouchi-widget.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_popular-collection.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_premium-service-widget.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_promotion-widget.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_restaurant-word-links.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_search-link-list.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_service-widget.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_smart-device-links.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_socials.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_strong-inner-splitter.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_vertical-link-list.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_yoyaku-widget.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_zebra-table.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_fusen-title.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_footer-widget.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_cassette.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_headline-widget.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_unit.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_last-update.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_map-widget.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/scss/partial/components/_other-links.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/home-rmx/js/script.js",
+		"/private/etc/hosts",
+		"/Users/dgeh45/Documents/koyama_html_fix/index.html",
+		"/Users/dgeh45/Documents/html_sample"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"営業時間•ご挨拶",
+			"sp-unit",
+			"地図"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "scss/style.scss",
+					"settings":
+					{
+						"buffer_size": 9032,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3006,
+								3006
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3555.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "access/index.html",
+					"settings":
+					{
+						"buffer_size": 1777,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								828,
+								828
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 24.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "about/index.html",
+					"settings":
+					{
+						"buffer_size": 2007,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								816,
+								816
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 24.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "interior/index.html",
+					"settings":
+					{
+						"buffer_size": 2293,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								827,
+								827
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 187.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "souvenirs/index.html",
+					"settings":
+					{
+						"buffer_size": 1856,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								826,
+								826
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 25.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "dining/index.html",
+					"settings":
+					{
+						"buffer_size": 2847,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								825,
+								825
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

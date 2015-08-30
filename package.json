@@ -1,0 +1,22 @@
+{
+  "name": "genmyoji",
+  "version": "1.0.0",
+  "description": "'Gruntの定義ファイル'",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "e"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgeh45/scope01.git"
+  },
+  "keywords": [
+    "genmyoji"
+  ],
+  "author": "dgeh45",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dgeh45/scope01/issues"
+  },
+  "homepage": "https://github.com/dgeh45/scope01#readme"
+}

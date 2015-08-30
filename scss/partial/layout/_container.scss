@@ -1,0 +1,32 @@
+body {
+	background: #000;
+	font-size: 13px;
+	font-family: Meiryo, "Hiragino Mincho Pro", "MS Mincho","Hiragino Kaku Gothic Pro W3", "Hiragino Kaku Gothic Pro", "MS P Gothic", Osaka, Arial, Sans-serif;
+	line-height: 1;
+	-webkit-text-size-adjust: none;
+	&.blog {
+		background: #F6EEDB;
+	}
+}
+
+@media screen and (max-device-width: 480px) {
+	body {
+		-webkit-text-size-adjust: none; /* for iPhone */
+	}
+}
+
+html {
+	overflow-y: scroll;
+}
+
+.container {
+	width: 100%;
+	.content {
+		width: 100%;
+		margin: 0 auto;
+		.main {
+
+		}
+
+	}
+}

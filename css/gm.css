@@ -1,0 +1,1128 @@
+@charset "utf-8";
+/* line 5, ../scss/partial/mixin/_widget.scss */
+.sentence, .header .header-box .midashi-wrap .first-text, .header .header-box .midashi-wrap .second-text, .header-middle .header-box .midashi-wrap h1, .top-widget .top ul.blog-list li p {
+  line-height: 1.4;
+}
+
+/* line 70, ../scss/partial/_reset.scss */
+a,
+abbr,
+address,
+article,
+aside,
+audio,
+b,
+blockquote,
+body,
+canvas,
+caption,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+samp,
+section,
+small,
+span,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+ul,
+var,
+video {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
+/* line 93, ../scss/partial/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* line 98, ../scss/partial/_reset.scss */
+ul,
+ol {
+  list-style: none;
+}
+
+/* line 103, ../scss/partial/_reset.scss */
+blockquote,
+q {
+  quotes: none;
+}
+
+/* line 110, ../scss/partial/_reset.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 115, ../scss/partial/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 120, ../scss/partial/_reset.scss */
+a {
+  outline: none;
+}
+
+/* line 124, ../scss/partial/_reset.scss */
+a:link {
+  color: #09598d;
+  text-decoration: none;
+}
+
+/* line 129, ../scss/partial/_reset.scss */
+a:visited {
+  color: #09598d;
+}
+
+/* line 133, ../scss/partial/_reset.scss */
+a:hover {
+  color: #09598d;
+  text-decoration: underline;
+}
+
+/* line 138, ../scss/partial/_reset.scss */
+a:active {
+  color: #09598d;
+  text-decoration: underline;
+}
+
+/* line 143, ../scss/partial/_reset.scss */
+img {
+  vertical-align: bottom;
+}
+
+/* line 147, ../scss/partial/_reset.scss */
+.cx:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/* line 155, ../scss/partial/_reset.scss */
+*:first-child + html .cx {
+  /* display: inline-block;*/
+  min-height: 1%;
+}
+
+/* line 160, ../scss/partial/_reset.scss */
+* html .cx {
+  height: 1%;
+}
+
+/* line 164, ../scss/partial/_reset.scss */
+a {
+  overflow: hidden;
+  text-decoration: underline;
+}
+
+/* line 1, ../scss/partial/layout/_container.scss */
+body {
+  background: #000;
+  font-size: 13px;
+  font-family: Meiryo, "Hiragino Mincho Pro", "MS Mincho","Hiragino Kaku Gothic Pro W3", "Hiragino Kaku Gothic Pro", "MS P Gothic", Osaka, Arial, Sans-serif;
+  line-height: 1;
+  -webkit-text-size-adjust: none;
+}
+/* line 7, ../scss/partial/layout/_container.scss */
+body.blog {
+  background: #F6EEDB;
+}
+
+@media screen and (max-device-width: 480px) {
+  /* line 13, ../scss/partial/layout/_container.scss */
+  body {
+    -webkit-text-size-adjust: none;
+    /* for iPhone */
+  }
+}
+/* line 18, ../scss/partial/layout/_container.scss */
+html {
+  overflow-y: scroll;
+}
+
+/* line 22, ../scss/partial/layout/_container.scss */
+.container {
+  width: 100%;
+}
+/* line 24, ../scss/partial/layout/_container.scss */
+.container .content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* header */
+/* line 2, ../scss/partial/components/_background-widget.scss */
+.background-widget {
+  background: url(../img/header-bg.jpg) no-repeat 50% 0;
+  margin: 0;
+}
+/* line 5, ../scss/partial/components/_background-widget.scss */
+.background-widget .foot {
+  background: url(../img/footer-bg.jpg) no-repeat 50% 100%;
+  padding-top: 300px;
+}
+/* line 8, ../scss/partial/components/_background-widget.scss */
+.background-widget .foot .inner {
+  background: #f6f4eb;
+  width: 940px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+/* line 13, ../scss/partial/components/_background-widget.scss */
+.background-widget .foot .inner.notfirst {
+  padding-top: 30px;
+}
+
+/* header */
+/* line 2, ../scss/partial/components/_header-widget.scss */
+.header {
+  display: none;
+  width: 100%;
+  background: url(../img/header-bg.png) repeat-x;
+  height: 296px;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 11, ../scss/partial/components/_header-widget.scss */
+.header .header-box {
+  width: 960px;
+  margin: 0 auto;
+}
+/* line 14, ../scss/partial/components/_header-widget.scss */
+.header .header-box .midashi-wrap {
+  display: block;
+  float: left;
+  margin: 10px 0 0;
+  width: 300px;
+}
+/* line 19, ../scss/partial/components/_header-widget.scss */
+.header .header-box .midashi-wrap .first-text {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+/* line 24, ../scss/partial/components/_header-widget.scss */
+.header .header-box .midashi-wrap h1 {
+  background: url(../img/logo.png) no-repeat;
+  width: 244px;
+  height: 124px;
+  text-indent: -9999px;
+  margin-bottom: 10px;
+}
+/* line 31, ../scss/partial/components/_header-widget.scss */
+.header .header-box .midashi-wrap .second-text {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+/* line 36, ../scss/partial/components/_header-widget.scss */
+.header .header-box .midashi-wrap .url {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+/* line 40, ../scss/partial/components/_header-widget.scss */
+.header .header-box .midashi-wrap .tel {
+  font-size: 20px;
+}
+/* line 44, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap {
+  display: block;
+  float: right;
+  width: 650px;
+}
+/* line 49, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li {
+  display: block;
+  float: left;
+  height: 296px;
+}
+/* line 53, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li a {
+  background: url(../img/header-titles.png) no-repeat;
+  display: block;
+  text-indent: -9999px;
+  height: 296px;
+}
+/* line 59, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li.annai {
+  width: 90px;
+}
+/* line 61, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li.annai a {
+  display: block;
+  width: 90px;
+}
+/* line 64, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li.annai a:hover {
+  background-position: 0 -296px;
+}
+/* line 69, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li.soushiki {
+  width: 81px;
+}
+/* line 71, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li.soushiki a {
+  display: block;
+  width: 81px;
+  background-position: -90px 0;
+}
+/* line 75, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li.soushiki a:hover {
+  background-position: -90px -296px;
+}
+/* line 80, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li.houji {
+  width: 80px;
+}
+/* line 82, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li.houji a {
+  display: block;
+  width: 80px;
+  background-position: -171px 0;
+}
+/* line 86, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li.houji a:hover {
+  background-position: -171px -296px;
+}
+/* line 91, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li.ayumi {
+  width: 79px;
+}
+/* line 93, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li.ayumi a {
+  display: block;
+  width: 79px;
+  background-position: -251px 0;
+}
+/* line 97, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li.ayumi a:hover {
+  background-position: -251px -296px;
+}
+/* line 102, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li.houwa {
+  width: 80px;
+}
+/* line 104, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li.houwa a {
+  display: block;
+  width: 80px;
+  background-position: -330px 0;
+}
+/* line 108, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li.houwa a:hover {
+  background-position: -330px -296px;
+}
+/* line 113, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li.question {
+  width: 80px;
+}
+/* line 115, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li.question a {
+  display: block;
+  width: 80px;
+  background-position: -410px 0;
+}
+/* line 119, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li.question a:hover {
+  background-position: -410px -296px;
+}
+/* line 124, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li.access {
+  width: 80px;
+}
+/* line 126, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li.access a {
+  display: block;
+  width: 80px;
+  background-position: -490px 0;
+}
+/* line 130, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li.access a:hover {
+  background-position: -490px -296px;
+}
+/* line 135, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li.chawakai {
+  width: 80px;
+}
+/* line 137, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li.chawakai a {
+  background-position: -570px 0;
+  width: 80px;
+}
+/* line 140, ../scss/partial/components/_header-widget.scss */
+.header .header-box .menu-wrap ul.list li.chawakai a:hover {
+  background-position: -570px -296px;
+}
+
+/* line 151, ../scss/partial/components/_header-widget.scss */
+.header-middle {
+  box-shadow: rgba(105, 105, 105, 0.56) 0px 0px 7px 5px;
+  -webkit-box-shadow: rgba(105, 105, 105, 0.56) 0px 0px 7px 5px;
+  -moz-box-shadow: rgba(105, 105, 105, 0.56) 0px 0px 7px 5px;
+  background: url(../img/header-bg.png) repeat-x;
+  height: 91px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 900;
+  display: none;
+}
+/* line 162, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box {
+  width: 960px;
+  margin: 0 auto;
+}
+/* line 165, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .midashi-wrap {
+  float: left;
+  padding-top: 10px;
+}
+/* line 168, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .midashi-wrap h1 {
+  background: url(../img/logo-small.png) no-repeat;
+  width: 120px;
+  height: 62px;
+  display: block;
+}
+/* line 174, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .midashi-wrap h1 a {
+  display: block;
+  width: 120px;
+  height: 62px;
+  text-indent: -9999px;
+}
+/* line 182, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap {
+  display: block;
+  float: right;
+  width: 680px;
+}
+/* line 187, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li {
+  display: block;
+  float: left;
+  width: 91px;
+  height: 91px;
+  margin: 0;
+  position: relative;
+}
+/* line 194, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li a {
+  background: url(../img/header-titles-small.png) no-repeat;
+  display: block;
+  text-indent: -9999px;
+  height: 91px;
+  width: 91px;
+}
+/* line 201, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li span {
+  background: url(../img/menu-fukidashi.png) no-repeat;
+  text-indent: -9999px;
+  display: none;
+  width: 75px;
+  height: 260px;
+  position: absolute;
+  top: 65px;
+  left: 10px;
+}
+/* line 212, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.annai {
+  width: 90px;
+}
+/* line 215, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.annai a:hover,
+.header-middle .header-box .menu-wrap .list li.annai a.select {
+  background-position: 0 -93px;
+}
+/* line 219, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.soushiki {
+  width: 80px;
+}
+/* line 221, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.soushiki span {
+  background-position: -90px 0;
+  left: 2px;
+}
+/* line 225, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.soushiki a {
+  background-position: -91px 0;
+  width: 80px;
+}
+/* line 229, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.soushiki a:hover, .header-middle .header-box .menu-wrap .list li.soushiki a.select {
+  background-position: -91px -93px;
+}
+/* line 234, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.houji {
+  width: 78px;
+}
+/* line 236, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.houji span {
+  background-position: -167px 0;
+  left: -3px;
+}
+/* line 240, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.houji a {
+  background-position: -173px 0;
+  width: 80px;
+}
+/* line 244, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.houji a:hover, .header-middle .header-box .menu-wrap .list li.houji a.select {
+  background-position: -173px -93px;
+}
+/* line 249, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.ayumi {
+  width: 76px;
+}
+/* line 251, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.ayumi span {
+  background-position: -252px 0;
+  left: -3px;
+}
+/* line 255, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.ayumi a {
+  background-position: -254px 0;
+  width: 76px;
+}
+/* line 259, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.ayumi a:hover, .header-middle .header-box .menu-wrap .list li.ayumi a.select {
+  background-position: -254px -93px;
+}
+/* line 264, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.houwa {
+  width: 75px;
+}
+/* line 266, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.houwa span {
+  background-position: -330px 0;
+  left: 0;
+}
+/* line 270, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.houwa a {
+  background-position: -335px 0;
+  width: 75px;
+}
+/* line 274, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.houwa a:hover, .header-middle .header-box .menu-wrap .list li.houwa a.select {
+  background-position: -335px -93px;
+}
+/* line 279, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.question {
+  width: 74px;
+}
+/* line 281, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.question span {
+  background-position: -409px 0;
+  left: 0;
+}
+/* line 285, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.question a {
+  background-position: -416px 0;
+  width: 74px;
+}
+/* line 289, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.question a:hover, .header-middle .header-box .menu-wrap .list li.question a.select {
+  background-position: -416px -93px;
+}
+/* line 294, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.access {
+  width: 77px;
+}
+/* line 296, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.access span {
+  background-position: -490px 0;
+  left: -2px;
+}
+/* line 300, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.access a {
+  background-position: -493px 0;
+  width: 77px;
+}
+/* line 304, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.access a:hover, .header-middle .header-box .menu-wrap .list li.access a.select {
+  background-position: -493px -93px;
+}
+/* line 309, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.chawakai {
+  width: 80px;
+}
+/* line 311, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.chawakai span {
+  background-position: -566px 0;
+  left: -5px;
+}
+/* line 315, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.chawakai a {
+  background-position: -571px 0;
+  width: 80px;
+}
+/* line 319, ../scss/partial/components/_header-widget.scss */
+.header-middle .header-box .menu-wrap .list li.chawakai a:hover, .header-middle .header-box .menu-wrap .list li.chawakai a.select {
+  background-position: -571px -93px;
+}
+
+/* line 1, ../scss/partial/components/_top-widget.scss */
+.top-widget {
+  background: url(../img/bg01.jpg) no-repeat 50% 0 #fbf8f3;
+  margin: 0 auto;
+  height: 862px;
+  width: 100%;
+}
+/* line 6, ../scss/partial/components/_top-widget.scss */
+.top-widget .top {
+  position: relative;
+  margin: 0 auto;
+  top: 330px;
+  width: 960px;
+}
+/* line 12, ../scss/partial/components/_top-widget.scss */
+.top-widget .top ul.blog-list li {
+  margin-bottom: 20px;
+}
+/* line 14, ../scss/partial/components/_top-widget.scss */
+.top-widget .top ul.blog-list li p {
+  background: #000;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  color: #fff;
+  margin-bottom: 10px;
+  letter-spacing: 1.6px;
+  padding: 5px;
+  font-size: 12px;
+}
+/* line 24, ../scss/partial/components/_top-widget.scss */
+.top-widget .top ul.blog-list li strong {
+  display: block;
+}
+/* line 26, ../scss/partial/components/_top-widget.scss */
+.top-widget .top ul.blog-list li strong a {
+  color: #fff;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  font-size: 40px;
+  padding: 5px;
+}
+/* line 31, ../scss/partial/components/_top-widget.scss */
+.top-widget .top ul.blog-list li strong a:visited {
+  color: #fff;
+}
+/* line 34, ../scss/partial/components/_top-widget.scss */
+.top-widget .top ul.blog-list li strong a:hover {
+  text-decoration: none;
+  background-color: #B8860B;
+}
+/* line 38, ../scss/partial/components/_top-widget.scss */
+.top-widget .top ul.blog-list li strong a:active {
+  color: #fff;
+}
+
+/* line 2, ../scss/partial/components/_annai-widget.scss */
+.-annai .last {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  margin-bottom: 40px;
+}
+/* line 6, ../scss/partial/components/_annai-widget.scss */
+.-annai strong {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 10px;
+}
+/* line 11, ../scss/partial/components/_annai-widget.scss */
+.-annai .keireki {
+  margin-bottom: 20px;
+}
+/* line 13, ../scss/partial/components/_annai-widget.scss */
+.-annai .keireki dl {
+  border-bottom: 1px dotted #fff;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  *zoom: 1;
+  font-size: 14px;
+}
+/* line 19, ../scss/partial/components/_annai-widget.scss */
+.-annai .keireki dl dt {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  width: 200px;
+}
+/* line 23, ../scss/partial/components/_annai-widget.scss */
+.-annai .keireki dl dd {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  width: 380px;
+}
+/* line 29, ../scss/partial/components/_annai-widget.scss */
+.-annai .daijini-omou {
+  padding-top: 100px;
+  margin-bottom: 30px;
+}
+/* line 32, ../scss/partial/components/_annai-widget.scss */
+.-annai .daijini-omou p {
+  margin-bottom: 15px;
+}
+
+/* line 2, ../scss/partial/components/_soushiki-widget.scss */
+.-soushiki strong {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* line 8, ../scss/partial/components/_soushiki-widget.scss */
+.-toptext {
+  text-align: center;
+}
+/* line 10, ../scss/partial/components/_soushiki-widget.scss */
+.-toptext h1 {
+  margin-bottom: 40px;
+}
+/* line 13, ../scss/partial/components/_soushiki-widget.scss */
+.-toptext .subtitle {
+  font-size: 20pt;
+  margin-bottom: 40px;
+  padding-top: 30px;
+}
+/* line 18, ../scss/partial/components/_soushiki-widget.scss */
+.-toptext .weak-text {
+  font-size: 12pt;
+  line-height: 1.4;
+}
+
+/* line 2, ../scss/partial/components/_houji-widget.scss */
+.-houji strong {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* line 8, ../scss/partial/components/_houji-widget.scss */
+.-toptext {
+  text-align: center;
+}
+/* line 10, ../scss/partial/components/_houji-widget.scss */
+.-toptext h1 {
+  margin-bottom: 40px;
+}
+/* line 13, ../scss/partial/components/_houji-widget.scss */
+.-toptext .subtitle {
+  font-size: 20pt;
+  margin-bottom: 40px;
+  padding-top: 30px;
+}
+/* line 18, ../scss/partial/components/_houji-widget.scss */
+.-toptext .weak-text {
+  font-size: 12pt;
+  line-height: 1.4;
+}
+
+/* line 2, ../scss/partial/components/_question-widget.scss */
+.-question strong {
+  font-size: 36px;
+  display: block;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+/* line 8, ../scss/partial/components/_question-widget.scss */
+.-question .last {
+  margin-bottom: 20px;
+}
+/* line 11, ../scss/partial/components/_question-widget.scss */
+.-question .email {
+  font-size: 20px;
+}
+/* line 14, ../scss/partial/components/_question-widget.scss */
+.-question .FAX {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 2, ../scss/partial/components/_access-widget.scss */
+.-access .url {
+  font-size: 20px;
+}
+/* line 5, ../scss/partial/components/_access-widget.scss */
+.-access .tel {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* line 2, ../scss/partial/components/_chawakai-widget.scss */
+.-chawakai strong {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 10px;
+}
+/* line 7, ../scss/partial/components/_chawakai-widget.scss */
+.-chawakai p {
+  margin-bottom: 20px;
+}
+/* line 10, ../scss/partial/components/_chawakai-widget.scss */
+.-chawakai .copyright {
+  color: #000;
+  font-size: 20px;
+  display: block;
+  margin: 700px auto 30px;
+  text-align: center;
+}
+
+/* line 1, ../scss/partial/components/_base-widget.scss */
+.dispblk {
+  display: block !important;
+}
+
+/* line 5, ../scss/partial/components/_base-widget.scss */
+.dispnon {
+  display: none !important;
+}
+
+/* line 9, ../scss/partial/components/_base-widget.scss */
+.weak-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* line 15, ../scss/partial/components/_base-widget.scss */
+.item-list li {
+  font-size: 22px;
+}
+/* line 18, ../scss/partial/components/_base-widget.scss */
+.item-list.-sidebyside {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 20, ../scss/partial/components/_base-widget.scss */
+.item-list.-sidebyside li {
+  float: left;
+  margin-right: 15px;
+  padding-left: 0;
+}
+/* line 27, ../scss/partial/components/_base-widget.scss */
+.item-list.-marker li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+/* header */
+/* line 2, ../scss/partial/components/_footer-widget.scss */
+.footer {
+  width: 900px;
+  margin: 20px auto;
+}
+/* line 5, ../scss/partial/components/_footer-widget.scss */
+.footer dl {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  width: 270px;
+  margin-right: 10px;
+}
+/* line 10, ../scss/partial/components/_footer-widget.scss */
+.footer dl dt {
+  color: #fff;
+  font-size: 14pt;
+  display: block;
+  margin-bottom: 20px;
+}
+/* line 16, ../scss/partial/components/_footer-widget.scss */
+.footer dl dd {
+  display: block;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+/* line 20, ../scss/partial/components/_footer-widget.scss */
+.footer dl dd a {
+  font-size: 11pt;
+  color: #fff;
+  background: url(../img/arrow-sml.png) no-repeat 0 8px;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+/* line 31, ../scss/partial/components/_footer-widget.scss */
+.copyright {
+  color: #fff;
+  font-size: 12pt;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+/* line 1, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+/* line 5, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-annai {
+  background: url(../img/goannai-bg.jpg) no-repeat 50% 0 #4a4f55;
+}
+/* line 7, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-annai h1 {
+  width: 65px;
+  height: 373px;
+  background: url(../img/sub-tit-group.png) no-repeat -780px -82px;
+}
+/* line 13, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-soushiki {
+  background: url(../img/bg-soushiki.jpg) repeat;
+}
+/* line 15, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-soushiki h1 {
+  width: 77px;
+  height: 398px;
+  background: url(../img/sub-tit-group.png) no-repeat -332px -75px;
+}
+/* line 21, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-houji {
+  background: url(../img/bg-hotoke.jpg) no-repeat;
+}
+/* line 23, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-houji h1 {
+  width: 81px;
+  height: 586px;
+  background: url(../img/title-gokigan.png) no-repeat;
+}
+/* line 29, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-question {
+  background: #F5EEDB;
+}
+/* line 31, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-question h1 {
+  width: 65px;
+  height: 477px;
+  background: url(../img/sub-tit-group.png) no-repeat -998px -80px;
+}
+/* line 37, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-access {
+  background: #F5EEDB;
+}
+/* line 39, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-access h1 {
+  width: 65px;
+  height: 297px;
+  background: url(../img/sub-tit-group.png) no-repeat -117px -84px;
+}
+/* line 45, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-chawakai {
+  background: url(../img/bg-chawakai.jpg) no-repeat 50% 0 #d9ab6f;
+  height: 1524px;
+  position: relative;
+}
+/* line 49, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-chawakai h1 {
+  width: 70px;
+  height: 336px;
+  background: url(../img/sub-tit-group.png) no-repeat -553px -85px;
+}
+/* line 54, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea.-chawakai .box-wrap {
+  padding: 150px 0 0;
+}
+/* line 58, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea .box-wrap {
+  width: 960px;
+  margin: 0 auto;
+  padding: 130px 0 60px;
+}
+/* line 62, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea .box-wrap .sentence-wrap {
+  width: 650px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  font-size: 18px;
+  margin-left: 30px;
+  line-height: 2;
+}
+/* line 68, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea .box-wrap .sentence-wrap.-annai {
+  color: #fff;
+  width: 600px;
+}
+/* line 72, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea .box-wrap .sentence-wrap.-soushiki {
+  width: 760px;
+}
+/* line 75, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea .box-wrap .sentence-wrap.-access {
+  width: 600px;
+  margin-left: 120px;
+}
+/* line 79, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea .box-wrap .sentence-wrap.-question {
+  width: 690px;
+}
+/* line 84, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea h1 {
+  text-indent: -9999px;
+  display: block;
+}
+/* line 87, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea h1.left {
+  float: left;
+  margin-left: 50px;
+}
+/* line 91, ../scss/partial/components/_boxarea-widget.scss */
+.boxarea h1.right {
+  float: right;
+  margin-right: 50px;
+}
+
+/* line 1, ../scss/partial/components/_special-link.scss */
+.special-link {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+/* line 4, ../scss/partial/components/_special-link.scss */
+.special-link a {
+  background-color: rgba(20, 20, 20, 0.15);
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  color: #000;
+  padding: 0 5px;
+  text-decoration: underline;
+}
+/* line 10, ../scss/partial/components/_special-link.scss */
+.special-link a:hover {
+  background-color: rgba(20, 20, 20, 0.15);
+  text-decoration: none;
+}
+/* line 15, ../scss/partial/components/_special-link.scss */
+.special-link.-large {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* line 1, ../scss/partial/components/_option-widget.scss */
+.option-widget {
+  display: inline-block;
+  margin: 15px auto;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1001;
+}
+/* line 12, ../scss/partial/components/_option-widget.scss */
+.option-widget .tel {
+  color: #000;
+  display: inline-block;
+  font-size: 18px;
+}
+/* line 16, ../scss/partial/components/_option-widget.scss */
+.option-widget .tel span {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}

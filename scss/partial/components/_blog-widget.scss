@@ -1,0 +1,170 @@
+.blog-top-widget {
+    .top {
+        background: url(../img/blog-title-ayumi.jpg) no-repeat 50% 0 #BAD8FE;
+		height: 409px;
+		margin: 0 auto;
+		width: 100%;
+		&.howa {
+			background: url(../img/blog-title-howa.jpg) no-repeat 50% 0 #fff;
+		}
+		&.houji {
+			background: url(../img/header-title-houji.jpg) no-repeat 50% 0 #fff;
+		}
+		h1 {
+			text-indent: -9999px;
+		}
+    }
+    .blog-body {
+    	width: 960px;
+    	margin: 0 auto;
+    	.blog-wrapper {
+    		@include legacy-pie-clearfix;
+    		padding: 30px 0;
+    		.main {
+				width: 710px;
+				float: right;
+				.main-box {
+					margin-bottom: 80px;
+					h1 {
+						font-size: 40px;
+						margin-bottom: 10px;
+						padding-bottom: 10px;
+						border-bottom: 1px solid #000;
+					}
+					h2 {
+						font-size: 24px;
+					}
+					h3 {
+						font-size: 20px;
+						margin-bottom: 15px;
+					}
+					h4 {
+						font-size: 18px;
+						margin-bottom: 10px;
+					}
+					strong {
+						font-weight: bold;
+					}
+					p {
+						display: block;
+						font-size: 16px;
+						line-height: 1.4;
+						margin-bottom: 5px;
+						min-height: 20px;
+					}
+					p.sub-text {
+						font-size: 20px;
+						line-height: 1.6;
+						margin-bottom: 15px;
+					}
+					del {
+						text-decoration: line-through;
+					}
+					a {
+						background-color: rgba(20, 20, 20, 0.15);
+						@include inline-block;
+						color: #000;
+						padding: 0 5px;
+						text-decoration: underline;
+						&:hover {
+							background-color: rgba(20, 20, 20, 0.15);
+							text-decoration: none;
+						}
+					}
+					p.time {
+						text-align: right;
+						margin-bottom: 20px;
+						font-size: 14px;
+					}
+					.image-area {
+						margin-bottom: 15px;
+					}
+					ul {
+						li {
+							list-style-type: disc;
+							font-size: 16px;
+							margin-bottom: 10px;
+							margin-left: 20px;
+						}
+					}
+				}
+				.blogPage {
+					display: block;
+					width: 100%;
+					margin: 0 auto;
+					ul {
+						@include legacy-pie-clearfix;
+						li {
+							background-color: rgba(20, 20, 20, 0.15);
+						font-size: 16px;
+							&.next {
+								float: left;
+							}
+							&.past {
+								float: right;
+							}
+							a {
+								color: #000;
+								display: block;
+								padding: 10px;
+								text-decoration: underline;
+								&:hover {
+									text-decoration: none;
+								}
+							}
+						}
+					}
+				}
+    		}
+    		.aside {
+				width: 230px;
+				float: left;
+
+				.aside-list-wrap {
+					margin-bottom: 40px;
+					.aside-list-title {
+						font-size: 22px;
+						display: block;
+						padding-bottom: 10px;
+						span {
+							font-size: 16px;
+						}
+					}
+					.aside-list {
+						li {
+							a {
+								font-size: 16px;
+								line-height: 1.4;
+								margin-bottom: 10px;
+								@include inline-block;
+								padding: 3px 5px;
+								&:hover {
+									background-color: #d4c59d;
+								}
+							}
+						}
+					}
+				}
+    		}
+    	}
+    }
+	.copyright {
+		color: #000;
+	}
+}
+
+.-toptext {
+    text-align: center;
+    h1 {
+    	margin-bottom: 40px;
+    }
+    .subtitle {
+    	font-size: 20pt;
+    	margin-bottom: 40px;
+    	padding-top: 30px;
+    }
+    .weak-text {
+    	font-size: 12pt;
+    	line-height: 1.4;
+    }
+}
